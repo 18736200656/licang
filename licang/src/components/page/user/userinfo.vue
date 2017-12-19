@@ -1,7 +1,7 @@
 <template>
     <div class="user_info">
+      <Header></Header>
         <div class="box">
-            <Header></Header>
             <header>
                 <img :src="defaultImg" alt="" class="userImg">
                 <div class="name">
@@ -16,13 +16,13 @@
                             <dd>QQ
                                 <div v-show="divshow">
                                     <input type="text" class="qq" maxlength="10" v-model="qq">
-                                    <i class="el-icon-edit" @click="clearText($el)"></i>
+                                    <i class="el-icon-edit" @click="clearText($event)"></i>
                                 </div>
                             </dd>
                             <dd>电话
                                 <div>
                                     <input type="text" class="phone" maxlength="11" v-model="phone">
-                                    <i class="el-icon-edit" @click="clearText($el)"></i>
+                                    <i class="el-icon-edit" @click="clearText($event)"></i>
                                 </div>
                             </dd>
                             <dd>介绍</dd>
@@ -45,7 +45,6 @@
 
 <script>
     import{imgBaseUrl} from '../../config/env'
-    import Header from '../common/header/header'
 
     let Oul = document.getElementsByClassName('infoDetail')[0];
     let lis = document.getElementsByClassName('li');
@@ -63,13 +62,12 @@
     created(){
 
     },
-    components:{
-      Header
-    },
     methods:{
       clearText(el){
-        console.log(el.targetName)
-        el.targetName.previousSbiling.value = ''
+        console.log(el.target)
+        console.log(el.target.parentNode.firstChild)
+        el.target.parentNode.firstChild.value = '';
+
       },
 
 
@@ -84,70 +82,72 @@
     }
     .box{
         border: 1px solid #ddd;
-        box-shadow: 0 0 4px #ddd;
+        -moz-box-shadow:5px 5px 5px rgba(0,0,0,.2),1px -3px 5px rgba(0,0,0,.2),3px 0 3px rgba(0,0,0,.2) inset;
+        -webkit-box-shadow:5px 5px 5px rgba(0,0,0,.2),1px -3px 5px rgba(0,0,0,.2),3px 0 3px rgba(0,0,0,.2) inset;
+        box-shadow:5px 5px 5px rgba(0,0,0,.2),1px -3px 5px rgba(0,0,0,.2),3px 0 3px rgba(0,0,0,.2) inset;
         overflow: hidden;
-    }
-    header{
 
-        height: .5rem;
-        padding:0.2rem;
-        .userImg{
-            float: left;
-            display: block;
-            height: 0.5rem;
-            width: 0.5rem;
-            border-radius: 50%;
-        }
-        .name{
-            margin-left: 0.3rem;
-            float: left;
+        header{
             height: .5rem;
-            h3{font:0.2rem/0.3rem '';
-                font-weight: bold;}
-            p{font:0.16rem/0.2rem '';color:#999;}
+            padding:0.2rem;
+            .userImg{
+                float: left;
+                display: block;
+                height: 0.5rem;
+                width: 0.5rem;
+                border-radius: 50%;
+            }
+            .name{
+                margin-left: 0.3rem;
+                float: left;
+                height: .5rem;
+                h3{font:0.2rem/0.3rem '';
+                    font-weight: bold;}
+                p{font:0.16rem/0.2rem '';color:#999;}
+            }
         }
-    }
-    .info{
-        margin-top: .5rem;
-        ul{
-            padding: .2rem 0;
-            li{
-                margin-left: 0.5rem;
-                padding-right: 0.3rem;
-                text-align: left;
-                font-weight: bold;
-                font: .24rem/.5rem '';
-                position: relative;
-                dl{
-                    dd{
-                        width: 100%;
-                        font:.16rem/.4rem '';
-                        color: #ccc;
-                        padding-left: 0.2rem;
-                        div{
+        .info{
+            margin-top: .5rem;
+            ul{
+                padding: .2rem 0;
+                li{
+                    margin-left: 0.5rem;
+                    padding-right: 0.3rem;
+                    text-align: left;
+                    font-weight: bold;
+                    font: .24rem/.5rem '';
+                    position: relative;
+                    dl{
+                        dd{
                             width: 100%;
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            input{
-                                display: block;
-                                outline: none;
-                                border: none;
-                                border-bottom: 1px solid #ddd;
-                                height: .3rem;
-                                font:0.2rem/0.3rem '';
-                                color: #000;
-                                width: 70%;
+                            font:.16rem/.4rem '';
+                            color: #ccc;
+                            padding-left: 0.2rem;
+                            div{
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                input{
+                                    display: block;
+                                    outline: none;
+                                    border: none;
+                                    border-bottom: 1px solid #ddd;
+                                    height: .3rem;
+                                    font:0.2rem/0.3rem '';
+                                    color: #000;
+                                    width: 70%;
+                                }
+                                i{
+                                    font-size: 0.24rem;
+                                }
                             }
-                            i{
-                                font-size: 0.24rem;
-                            }
+
                         }
-
                     }
+
+
                 }
-
-
             }
         }
     }

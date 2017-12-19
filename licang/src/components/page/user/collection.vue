@@ -4,7 +4,6 @@
             <li v-for="(item,index) in arr" :key="index">
                 <img :src="showImg" alt="" class="show_img">
                 <div class="author">
-                    {{item}}
                     <img :src="defaultImg" alt="">
                     <div class="collUser">
                         <h3>长衣服呢过</h3>
@@ -25,7 +24,7 @@
     name: "collection",
     data(){
       return{
-        arr:[3],
+        arr:[1,2,3],
         defaultImg:imgBaseUrl,
         showImg:'./../../../assets/logo.png'
       }
@@ -37,10 +36,14 @@
 </script>
 
 <style scoped lang="less" type="text/less">
-    ul{
+  .collection{
+    width:100%;
+    border:1px solid #ddd;
+    ul{width: 300%;
         height: 2.5rem;
+        overflow-y: hidden;
+        overflow-x: auto;
         li{
-            overflow: hidden;
             width: 2rem;
             height: 100%;
             float: left;
@@ -113,4 +116,5 @@
             top: 0;
         }
     }
+  }
 </style>

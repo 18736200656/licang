@@ -5,8 +5,9 @@ import App from './App'
 import router from './router'
 import Fastclick from 'fastclick'
 
-// import Header from './components/page/header/header'
-// Vue.component('header',Header);
+import Header from './components/page/common/header/header'
+Vue.component(Header.name,Header);
+
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 

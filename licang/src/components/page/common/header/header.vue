@@ -3,8 +3,7 @@
         <ul>
             <li><slot name="small_icons"><i class="el-icon-bottom"></i></slot></li>
             <li><slot name="big_icons">标题</slot></li>
-            <li><slot name="template">-1/9</slot>|</li>
-            <li><slot name="wheather">多云</slot></li>
+            <li><slot name="template">-1/9</slot>|<slot name="wheather">多云</slot></li>
         </ul>
     </div>
 </template>
