@@ -13,6 +13,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 
 import './assets/css/reset.css'
 import './assets/js/rem.js'
+import animate from 'animate.css' //引入动画
 
 
 Vue.use(ElementUI)

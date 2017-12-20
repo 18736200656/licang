@@ -5,7 +5,7 @@
                 <img :src="showImg" alt="" class="show_img">
                 <div class="author">
                     <img :src="defaultImg" alt="">
-                    <div class="collUser">
+                    <div class="collUser" @click="$router.push({path:'/concernman'})">
                         <h3>长衣服呢过</h3>
                         <p>fskadfa </p>
                     </div>
@@ -61,7 +61,7 @@
                 background: #fff;
                 padding: 0.2rem 0 0.2rem 0.2rem;
                 border: 1px solid #ddd;
-                box-shadow: 0 2px 4xp #ddd;
+                box-shadow: 0 2px 4px #ddd;
                 position: absolute;
                 left: 0;
                 bottom: -1rem;

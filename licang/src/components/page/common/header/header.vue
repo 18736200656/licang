@@ -19,21 +19,24 @@
 </script>
 
 <style scoped lang="less" type="text/less">
-    ul{
+    div{
         padding: 0 .2rem;
-        height:.48rem;
-        width: 100%;
-        position: fixed;
-        left: 0;
-        top: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        li{
-            font-size: .24rem;
-            color: #999;
-        }
+        box-sizing: border-box;
+        ul{
+            height:.48rem;
+            width: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li{
+                font-size: .24rem;
+                color: #999;
+            }
 
+        }
     }
 
 
