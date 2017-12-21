@@ -1,9 +1,12 @@
 <template>
     <div class="pre">
-        <transition name="fade">
+        <transition
+          enter-active-class="animated bounceIn"
+          leave-active-class="animated bounceOut"
+        >
             <section class="box" v-show="showDetail">
                 <img :src="defalult" alt="">
-                <span @click.stop="hide">x</span>
+                <span @hide.stop="hide">x</span>
             </section>
         </transition>
     </div>

@@ -9,6 +9,9 @@ import ImgList from '@/components/page/imglist' //个人展览
 import Preview from '@/components/page/preview' //点击图片放大
 import Concernman from '@/components/page/concernman' //关注人物信息
 
+
+import Lunbo from '@/components/lunbo' //关注人物信息
+
 Vue.use(Router)
 
 export default new Router({
@@ -48,6 +51,11 @@ export default new Router({
       path: '/concernman',
       name: 'concernman',
       component: Concernman
+    },
+    {
+      path: '/lunbo',
+      name: 'lunbo',
+      component: Lunbo
     }
 
   ],

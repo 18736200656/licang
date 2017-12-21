@@ -1,7 +1,12 @@
 <template>
     <div class="user_info">
-      <Header></Header>
-        <div class="box">
+     <Header :show="show" ></Header>
+      <button @click="change">开关</button>
+      <transition
+        enter-active-class="animated rotateInDownLeft"
+        leave-active-class="animated rotateOutUpLeft"
+      >
+        <div class="box" v-if="show">
             <header>
                 <img :src="defaultImg" alt="" class="userImg">
                 <div class="name">
@@ -11,25 +16,31 @@
             </header>
             <div class="info">
                 <ul class="infoDetail">
-                    <li>身份
-                        <dl v-show="ddshow">
+                    <li @click="ddshow=!ddshow">身份
+                        <transition
+                          enter-active-class="animated slideInDown"
+                          leave-active-class="animated slideOutUp"
+                        >
+                          <dl v-show="ddshow">
                             <dd>QQ
-                                <div v-show="divshow">
-                                    <input type="text" class="qq" maxlength="10" v-model="qq">
-                                    <i class="el-icon-edit" @click="clearText($event)"></i>
-                                </div>
+                              <div v-show="divshow">
+                                <input type="text" class="qq" maxlength="10" v-model="qq">
+                                <i class="el-icon-edit" @click="clearText($event)"></i>
+                              </div>
                             </dd>
                             <dd>电话
-                                <div>
-                                    <input type="text" class="phone" maxlength="11" v-model="phone">
-                                    <i class="el-icon-edit" @click="clearText($event)"></i>
-                                </div>
+                              <div>
+                                <input type="text" class="phone" maxlength="11" v-model="phone">
+                                <i class="el-icon-edit" @click="clearText($event)"></i>
+                              </div>
                             </dd>
                             <dd>介绍</dd>
                             <dd>经验</dd>
                             <dd>领域</dd>
                             <dd>区域</dd>
-                        </dl>
+                          </dl>
+                        </transition>
+
                     </li>
                     <li>关注</li>
                     <li>收藏</li>
@@ -39,15 +50,13 @@
                 </ul>
             </div>
         </div>
-
+      </transition>
     </div>
 </template>
 
 <script>
+  import Header from '../common/header/header'
     import{imgBaseUrl} from '../../config/env'
-
-    let Oul = document.getElementsByClassName('infoDetail')[0];
-    let lis = document.getElementsByClassName('li');
   export default {
     name: "userinfo",
     data(){
@@ -56,11 +65,12 @@
         divshow:false,
         defaultImg:imgBaseUrl,
         qq:'',
-        phone:''
+        phone:'',
+        show:true
       }
     },
     created(){
-
+      //this.$store.dispatch('change')
     },
     methods:{
       clearText(el){
@@ -69,8 +79,12 @@
         el.target.parentNode.firstChild.value = '';
 
       },
-
-
+      change(){
+        this.show = !this.show
+      }
+    },
+    components:{
+      Header
     }
 
   }

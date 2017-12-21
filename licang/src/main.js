@@ -10,14 +10,17 @@ Vue.component(Header.name,Header);
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-
+import './assets/js/jquery-1.4.2.min'
 import './assets/css/reset.css'
 import './assets/js/rem.js'
+
 import animate from 'animate.css' //引入动画
 
+// import './assets/js/swiper-3.4.2.min'
+// import './assets/css/swiper.min.css'
 
 Vue.use(ElementUI)
-//Vue.use(Fastclick)
+Vue.use(animate)
 Vue.config.productionTip = false
 
 

@@ -1,16 +1,16 @@
 <template>
     <div class="imglist">
         <Header></Header>
-        <button @click="show=!show">显示</button>
-        <transition name="bounce">
+
+        <transition
+          enter-active-class="animated bounceInUp"
+          leave-active-class="animated bounceOutDown"
+        >
             <div class="box" v-if="show">
-                <span>X</span>
+                <span @click="hide">X</span>
                 <div class="imgs">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+
+                    <div v-for="item in items" @click="$router.push({path:'/preview',params:item})">{{item}}</div>
                 </div>
             </div>
         </transition>
@@ -24,33 +24,23 @@
     name: "imglist",
     data(){
       return{
-        show:true
+        show:true,
+        items:[1,2,3,4,5]
+
       }
     },
     components:{
       Header
+    },
+    methods:{
+      hide(){
+        this.show = !this.show
+      }
     }
   }
 </script>
 
 <style scoped lang="less" type="text/less">
-    bounce-enter-active {
-        animation: bounce-in .5s;
-    }
-    .bounce-leave-active {
-        animation: bounce-in .5s reverse;
-    }
-    @keyframes bounce-in {
-        0% {
-            transform: scale(0);
-        }
-        50% {
-            transform: scale(1.5);
-        }
-        100% {
-            transform: scale(1);
-        }
-    }
     .imglist{
         padding: 0 .2rem;
         .box{
