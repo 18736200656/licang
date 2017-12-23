@@ -17,111 +17,24 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/licang/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="7" column="59" lean-forward="true" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
+            <state relative-caret-position="0">
+              <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
               <folding>
-                <element signature="e#347#381#0" expanded="true" />
-                <marker date="1513865058977" expanded="true" signature="579:649" ph="..." />
+                <element signature="e#140#161#0" expanded="true" />
+                <element signature="e#293#320#0" expanded="true" />
+                <marker date="1513993142188" expanded="true" signature="630:700" ph="..." />
+                <marker date="1513993142188" expanded="true" signature="821:947" ph="{...}" />
+                <marker date="1513993142188" expanded="true" signature="885:933" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="concernman.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/licang/src/components/page/concernman.vue">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/licang/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userinfo.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/licang/src/components/page/user/userinfo.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="53" lean-forward="true" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
-              <folding>
-                <element signature="n#div#0;n#transition#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-                <element signature="n#header#0;n#div#0;n#transition#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-                <element signature="e#3210#3738#0" expanded="false" />
-                <element signature="e#3752#5322#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="preview.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/licang/src/components/page/preview.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="imglist.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/licang/src/components/page/imglist.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="6" column="53" lean-forward="true" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/licang/src/components/page/index.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="43" lean-forward="true" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-              <folding>
-                <element signature="e#823#866#0" expanded="true" />
-                <element signature="n#style#0;n#!!top" expanded="false" />
-                <marker date="1513862734075" expanded="true" signature="193:738" ph="..." />
-                <marker date="1513862734075" expanded="true" signature="324:708" ph="..." />
-                <marker date="1513862734075" expanded="true" signature="382:607" ph="..." />
-                <marker date="1513862734075" expanded="true" signature="443:571" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lunbo.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/licang/src/components/lunbo.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-              <folding>
-                <element signature="e#2380#2414#0" expanded="false" />
-                <element signature="e#2429#2671#0" expanded="false" />
-                <element signature="n#style#0;n#!!top" expanded="false" />
-                <marker date="1513863750558" expanded="true" signature="403:445" ph="..." />
-                <marker date="1513863750558" expanded="true" signature="509:2358" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/licang/src/router/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.vue" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/licang/src/components/page/common/header/header.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+            <state relative-caret-position="300">
+              <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -130,14 +43,55 @@
       <file leaf-file-name="collection.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/licang/src/components/page/user/collection.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="57" lean-forward="true" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
+            <state relative-caret-position="25">
+              <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="imglist.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/licang/src/components/page/imglist.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+              <folding>
+                <element signature="e#772#815#0" expanded="true" />
+                <element signature="n#style#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="preview.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/licang/src/components/page/common/preview.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+              <folding>
+                <element signature="e#385#429#0" expanded="true" />
+                <marker date="1514045890639" expanded="true" signature="10:357" ph="..." />
+                <marker date="1514045890639" expanded="true" signature="36:347" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>margin: 0 0.2rem;</find>
+      <find>bigImg</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -147,17 +101,36 @@
       <list>
         <option value="$PROJECT_DIR$/licang/src/components/page/user/collection.vue" />
         <option value="$PROJECT_DIR$/licang/src/assets/js/swiper.min.js" />
-        <option value="$PROJECT_DIR$/licang/index.html" />
         <option value="$PROJECT_DIR$/licang/src/assets/js/swiper-3.4.2.min.js" />
-        <option value="$PROJECT_DIR$/licang/package.json" />
-        <option value="$PROJECT_DIR$/licang/src/router/index.js" />
-        <option value="$PROJECT_DIR$/licang/src/components/page/index.vue" />
         <option value="$PROJECT_DIR$/licang/src/components/lunbo.vue" />
-        <option value="$PROJECT_DIR$/licang/src/main.js" />
-        <option value="$PROJECT_DIR$/licang/src/components/page/imglist.vue" />
-        <option value="$PROJECT_DIR$/licang/src/components/page/preview.vue" />
-        <option value="$PROJECT_DIR$/licang/src/components/page/user/userinfo.vue" />
+        <option value="$PROJECT_DIR$/licang/src/components/store/mutation.js" />
+        <option value="$PROJECT_DIR$/licang/src/components/store/mutation-type.js" />
+        <option value="$PROJECT_DIR$/licang/src/components/store/action.js" />
+        <option value="$PROJECT_DIR$/licang/src/components/page/common/foot.html" />
+        <option value="$PROJECT_DIR$/licang/src/components/page/common/tab.vue.html" />
+        <option value="$PROJECT_DIR$/licang/src/components/page/C/c.html" />
+        <option value="$PROJECT_DIR$/licang/src/components/page/F/f.html" />
+        <option value="$PROJECT_DIR$/licang/package.json" />
+        <option value="$PROJECT_DIR$/licang/src/components/page/concernman.vue" />
+        <option value="$PROJECT_DIR$/licang/src/components/store/getter.js" />
+        <option value="$PROJECT_DIR$/licang/src/components/store/index.js" />
+        <option value="$PROJECT_DIR$/licang/src/components/page/C/c.vue" />
+        <option value="$PROJECT_DIR$/licang/src/components/page/F/f.vue" />
+        <option value="$PROJECT_DIR$/licang/index.html" />
+        <option value="$PROJECT_DIR$/licang/src/components/page/common/tab.vue" />
         <option value="$PROJECT_DIR$/licang/src/components/page/common/header/header.vue" />
+        <option value="$PROJECT_DIR$/licang/src/components/page/common/foot.vue" />
+        <option value="$PROJECT_DIR$/licang/src/components/page/index.vue" />
+        <option value="$PROJECT_DIR$/licang/src/components/page/user/userinfo.vue" />
+        <option value="$PROJECT_DIR$/licang/src/components/page/preview.vue" />
+        <option value="$PROJECT_DIR$/licang/src/router/index.js" />
+        <option value="$PROJECT_DIR$/licang/src/main.js" />
+        <option value="$PROJECT_DIR$/licang/src/store/mutation-type.js" />
+        <option value="$PROJECT_DIR$/licang/src/store/mutation.js" />
+        <option value="$PROJECT_DIR$/licang/src/store/index.js" />
+        <option value="$PROJECT_DIR$/licang/src/store/action.js" />
+        <option value="$PROJECT_DIR$/licang/src/components/page/common/preview.vue" />
+        <option value="$PROJECT_DIR$/licang/src/components/page/imglist.vue" />
       </list>
     </option>
   </component>
@@ -178,10 +151,10 @@
     <handled-path value="$PROJECT_DIR$/licang/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="114" />
-    <option name="y" value="127" />
-    <option name="width" value="1660" />
-    <option name="height" value="1052" />
+    <option name="x" value="20" />
+    <option name="y" value="229" />
+    <option name="width" value="1880" />
+    <option name="height" value="856" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -209,7 +182,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,40 +220,20 @@
               <item name="licang" type="462c0819:PsiDirectoryNode" />
               <item name="licang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="licang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="licang" type="462c0819:PsiDirectoryNode" />
-              <item name="licang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="header" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="licang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="licang" type="462c0819:PsiDirectoryNode" />
-              <item name="licang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="licang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="licang" type="462c0819:PsiDirectoryNode" />
-              <item name="licang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="router" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="licang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="licang" type="462c0819:PsiDirectoryNode" />
+              <item name="licang" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -293,9 +245,12 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="Vue" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gaojunnan\Desktop\练习html\licang\licang\src\components\page\common" />
+      <recent name="C:\Users\gaojunnan\Desktop\练习html\licang\licang\src" />
       <recent name="C:\Users\gaojunnan\Desktop\练习html\licang\licang\src\assets\js" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -328,32 +283,34 @@
       <updated>1513687592248</updated>
       <workItem from="1513687596665" duration="5131000" />
       <workItem from="1513771736748" duration="8415000" />
-      <workItem from="1513858752234" duration="10527000" />
+      <workItem from="1513858752234" duration="10665000" />
+      <workItem from="1513946752150" duration="9060000" />
+      <workItem from="1513990617452" duration="3892000" />
+      <workItem from="1514043410732" duration="2646000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24073000" />
+    <option name="totallyTimeSpent" value="39809000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="114" y="127" width="1660" height="1052" extended-state="0" />
-    <editor active="true" />
+    <frame x="20" y="229" width="1880" height="856" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21254568" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18152525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -386,21 +343,98 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/licang/src/components/page/user/userinfo.vue</url>
-          <line>122</line>
+          <line>123</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/licang/src/components/page/common/preview.vue</url>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/licang/src/components/page/common/preview.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding>
+            <element signature="e#385#429#0" expanded="true" />
+            <marker date="1514045890639" expanded="true" signature="10:357" ph="..." />
+            <marker date="1514045890639" expanded="true" signature="36:347" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licang/src/components/page/user/userinfo.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="53" lean-forward="true" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#div#0;n#transition#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#1490#1534#0" expanded="true" />
+            <element signature="e#2748#3276#0" expanded="false" />
+            <element signature="e#3290#4860#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licang/src/components/page/imglist.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="53" lean-forward="true" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+          <folding>
+            <element signature="e#772#815#0" expanded="true" />
+            <element signature="n#style#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licang/src/components/page/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="43" lean-forward="true" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licang/src/components/lunbo.vue" />
+    <entry file="file://$PROJECT_DIR$/licang/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+            <marker date="1513991178302" expanded="false" signature="1308:1399" ph="{&quot;name&quot;: 'preview'...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licang/src/components/page/user/collection.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="57" lean-forward="true" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licang/src/components/page/common/header/header.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/licang/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
           <folding>
-            <element signature="e#347#381#0" expanded="true" />
-            <marker date="1513865058977" expanded="true" signature="579:649" ph="..." />
+            <element signature="e#140#161#0" expanded="true" />
+            <element signature="e#293#320#0" expanded="true" />
+            <marker date="1513993142188" expanded="true" signature="630:700" ph="..." />
+            <marker date="1513993142188" expanded="true" signature="821:947" ph="{...}" />
+            <marker date="1513993142188" expanded="true" signature="885:933" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -409,7 +443,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -425,7 +458,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -433,14 +465,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="775">
           <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-          <folding>
-            <element signature="e#823#866#0" expanded="true" />
-            <element signature="n#style#0;n#!!top" expanded="false" />
-            <marker date="1513862734075" expanded="true" signature="193:738" ph="..." />
-            <marker date="1513862734075" expanded="true" signature="324:708" ph="..." />
-            <marker date="1513862734075" expanded="true" signature="382:607" ph="..." />
-            <marker date="1513862734075" expanded="true" signature="443:571" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -456,7 +480,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -464,7 +487,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="34" column="20" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -472,7 +494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="1" column="1685" lean-forward="false" selection-start-line="1" selection-start-column="1685" selection-end-line="1" selection-end-column="1685" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -481,8 +502,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#347#381#0" expanded="true" />
-            <marker date="1513865058977" expanded="true" signature="579:649" ph="..." />
+            <element signature="e#140#161#0" expanded="true" />
+            <element signature="e#293#320#0" expanded="true" />
+            <marker date="1513993142188" expanded="true" signature="630:700" ph="..." />
+            <marker date="1513993142188" expanded="true" signature="821:947" ph="{...}" />
+            <marker date="1513993142188" expanded="true" signature="885:933" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -491,14 +515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1200">
           <caret line="48" column="113" lean-forward="true" selection-start-line="46" selection-start-column="15" selection-end-line="48" selection-end-column="113" />
-          <folding>
-            <element signature="e#823#866#0" expanded="true" />
-            <element signature="n#style#0;n#!!top" expanded="false" />
-            <marker date="1513862734075" expanded="true" signature="193:738" ph="..." />
-            <marker date="1513862734075" expanded="true" signature="324:708" ph="..." />
-            <marker date="1513862734075" expanded="true" signature="382:607" ph="..." />
-            <marker date="1513862734075" expanded="true" signature="443:571" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -514,7 +530,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -522,7 +537,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -531,10 +545,10 @@
         <state relative-caret-position="1300">
           <caret line="52" column="11" lean-forward="true" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
           <folding>
-            <element signature="n#div#0;n#transition#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#header#0;n#div#0;n#transition#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="e#3210#3738#0" expanded="false" />
-            <element signature="e#3752#5322#0" expanded="false" />
+            <element signature="n#header#0;n#div#0;n#div#0;n#transition#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#1490#1534#0" expanded="true" />
+            <element signature="e#2748#3276#0" expanded="false" />
+            <element signature="e#3290#4860#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -550,7 +564,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -558,7 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -566,7 +578,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3025">
           <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -574,7 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -582,54 +592,76 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="1" column="1685" lean-forward="false" selection-start-line="1" selection-start-column="1685" selection-end-line="1" selection-end-column="1685" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/licang/index.html">
+    <entry file="file://$PROJECT_DIR$/licang/src/components/lunbo.vue" />
+    <entry file="file://$PROJECT_DIR$/licang/src/components/page/concernman.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="150">
+          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licang/src/store/getter.js" />
+    <entry file="file://$PROJECT_DIR$/licang/src/components/page/C/c.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/licang/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="31" column="33" lean-forward="false" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="400">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/licang/src/components/page/user/collection.vue">
+    <entry file="file://$PROJECT_DIR$/licang/node_modules/vue-loader/lib/selector.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="57" lean-forward="true" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
-          <folding />
+        <state relative-caret-position="425">
+          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/licang/src/router/index.js">
+    <entry file="file://$PROJECT_DIR$/licang/src/components/page/common/header/header.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="675">
+          <caret line="27" column="7" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="27" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/licang/src/components/lunbo.vue">
+    <entry file="file://$PROJECT_DIR$/licang/src/components/page/common/tab.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
-          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licang/src/components/page/common/foot.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licang/src/components/page/F/f.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licang/src/components/page/user/userinfo.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2100">
+          <caret line="90" column="25" lean-forward="false" selection-start-line="90" selection-start-column="25" selection-end-line="90" selection-end-column="25" />
           <folding>
-            <element signature="e#2380#2414#0" expanded="false" />
-            <element signature="e#2429#2671#0" expanded="false" />
-            <element signature="n#style#0;n#!!top" expanded="false" />
-            <marker date="1513863750558" expanded="true" signature="403:445" ph="..." />
-            <marker date="1513863750558" expanded="true" signature="509:2358" ph="{...}" />
+            <element signature="n#header#0;n#div#0;n#div#0;n#transition#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#1490#1534#0" expanded="true" />
+            <element signature="e#2748#3276#0" expanded="false" />
+            <element signature="e#3290#4860#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -637,71 +669,101 @@
     <entry file="file://$PROJECT_DIR$/licang/src/components/page/index.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
-          <caret line="2" column="43" lean-forward="true" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-          <folding>
-            <element signature="e#823#866#0" expanded="true" />
-            <element signature="n#style#0;n#!!top" expanded="false" />
-            <marker date="1513862734075" expanded="true" signature="193:738" ph="..." />
-            <marker date="1513862734075" expanded="true" signature="324:708" ph="..." />
-            <marker date="1513862734075" expanded="true" signature="382:607" ph="..." />
-            <marker date="1513862734075" expanded="true" signature="443:571" ph="..." />
-          </folding>
+          <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/licang/src/components/page/imglist.vue">
+    <entry file="file://$PROJECT_DIR$/licang/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="53" lean-forward="true" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/licang/src/components/page/preview.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        <state relative-caret-position="300">
+          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/licang/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="7" column="59" lean-forward="true" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
+        <state relative-caret-position="0">
+          <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
           <folding>
-            <element signature="e#347#381#0" expanded="true" />
-            <marker date="1513865058977" expanded="true" signature="579:649" ph="..." />
+            <element signature="e#140#161#0" expanded="true" />
+            <element signature="e#293#320#0" expanded="true" />
+            <marker date="1513993142188" expanded="true" signature="630:700" ph="..." />
+            <marker date="1513993142188" expanded="true" signature="821:947" ph="{...}" />
+            <marker date="1513993142188" expanded="true" signature="885:933" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/licang/src/components/page/concernman.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/licang/src/components/page/user/userinfo.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="53" lean-forward="true" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
-          <folding>
-            <element signature="n#div#0;n#transition#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#header#0;n#div#0;n#transition#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="e#3210#3738#0" expanded="false" />
-            <element signature="e#3752#5322#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/licang/src/components/page/common/header/header.vue">
+    <entry file="file://$PROJECT_DIR$/licang/src/store/mutation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
-          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licang/src/store/mutation-type.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licang/src/store/action.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licang/src/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licang/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="62" lean-forward="false" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+            <marker date="1513991178302" expanded="false" signature="1308:1399" ph="{&quot;name&quot;: 'preview'...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licang/src/components/page/user/collection.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licang/src/components/page/common/preview.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+          <folding>
+            <element signature="e#385#429#0" expanded="true" />
+            <marker date="1514045890639" expanded="true" signature="10:357" ph="..." />
+            <marker date="1514045890639" expanded="true" signature="36:347" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licang/src/components/page/imglist.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding>
+            <element signature="e#772#815#0" expanded="true" />
+            <element signature="n#style#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

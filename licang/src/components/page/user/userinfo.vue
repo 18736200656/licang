@@ -1,62 +1,59 @@
 <template>
-    <div class="user_info">
-     <Header :show="show" ></Header>
-      <button @click="change">开关</button>
-      <transition
-        enter-active-class="animated rotateInDownLeft"
-        leave-active-class="animated rotateOutUpLeft"
-      >
-        <div class="box" v-if="show">
-            <header>
-                <img :src="defaultImg" alt="" class="userImg">
-                <div class="name">
-                    <h3>张一等</h3>
-                    <p>自我介绍</p>
-                </div>
-            </header>
-            <div class="info">
-                <ul class="infoDetail">
-                    <li @click="ddshow=!ddshow">身份
-                        <transition
-                          enter-active-class="animated slideInDown"
-                          leave-active-class="animated slideOutUp"
-                        >
-                          <dl v-show="ddshow">
-                            <dd>QQ
-                              <div v-show="divshow">
-                                <input type="text" class="qq" maxlength="10" v-model="qq">
-                                <i class="el-icon-edit" @click="clearText($event)"></i>
-                              </div>
-                            </dd>
-                            <dd>电话
-                              <div>
-                                <input type="text" class="phone" maxlength="11" v-model="phone">
-                                <i class="el-icon-edit" @click="clearText($event)"></i>
-                              </div>
-                            </dd>
-                            <dd>介绍</dd>
-                            <dd>经验</dd>
-                            <dd>领域</dd>
-                            <dd>区域</dd>
-                          </dl>
-                        </transition>
-
-                    </li>
-                    <li>关注</li>
-                    <li>收藏</li>
-                    <li>客服</li>
-                    <li>设置</li>
-
-                </ul>
+  <div>
+    <transition
+      enter-active-class="animated rotateInDownLeft"
+      leave-active-class="animated rotateOutUpLeft"
+    >
+      <div class="user_info" v-if="show">
+        <div class="box">
+          <header>
+            <img :src="defaultImg" alt="" class="userImg">
+            <div class="name">
+              <h3>张一等</h3>
+              <p>自我介绍</p>
             </div>
+          </header>
+          <div class="info">
+            <ul class="infoDetail">
+              <li @click="ddshow=!ddshow">身份
+                <dl v-show="ddshow">
+                  <dd>QQ
+                    <div v-show="divshow">
+                      <input type="text" class="qq" maxlength="10" v-model="qq">
+                      <i class="el-icon-edit" @click="clearText($event)"></i>
+                    </div>
+                  </dd>
+                  <dd>电话
+                    <div>
+                      <input type="text" class="phone" maxlength="11" v-model="phone">
+                      <i class="el-icon-edit" @click="clearText($event)"></i>
+                    </div>
+                  </dd>
+                  <dd>介绍</dd>
+                  <dd>经验</dd>
+                  <dd>领域</dd>
+                  <dd>区域</dd>
+                </dl>
+              </li>
+              <li>关注</li>
+              <li>收藏</li>
+              <li>客服</li>
+              <li>设置</li>
+
+            </ul>
+          </div>
         </div>
-      </transition>
-    </div>
+
+      </div>
+    </transition>
+  </div>
+
 </template>
 
 <script>
   import Header from '../common/header/header'
-    import{imgBaseUrl} from '../../config/env'
+  import{imgBaseUrl} from '../../config/env'
+  import {mapState} from 'vuex'
   export default {
     name: "userinfo",
     data(){
@@ -66,7 +63,6 @@
         defaultImg:imgBaseUrl,
         qq:'',
         phone:'',
-        show:true
       }
     },
     created(){
@@ -79,12 +75,12 @@
         el.target.parentNode.firstChild.value = '';
 
       },
-      change(){
-        this.show = !this.show
-      }
+
     },
     components:{
-      Header
+    },
+    computed:{
+      ...mapState(['show'])
     }
 
   }
@@ -92,7 +88,12 @@
 
 <style scoped lang="less" type="text/less">
     .user_info{
-        padding:0 .15rem;
+      position: absolute;
+      left:0.2rem;
+      top:0.5rem;
+      right:0.35rem;
+      padding:0 .15rem;
+      z-index:999;
     }
     .box{
         border: 1px solid #ddd;

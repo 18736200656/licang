@@ -1,8 +1,8 @@
 <template>
     <div class="index">
-        <Header :show-list="show"></Header>
         <transition name="bounce">
             <div class="box" v-if="show">
+              11
                 <!--<div class="main">-->
                     <!--<img src="" alt="" class="img_main">-->
                     <!--<div class="swiper-container img_list">-->
@@ -21,9 +21,6 @@
 </template>
 
 <script>
-
-    import Header from './common/header/header'
-    import slider from 'vue-concise-slider'
     export default {
         name: "index",
         data(){
@@ -48,7 +45,7 @@
 
        },
         components:{
-          Header
+
         },
         methods:{
 

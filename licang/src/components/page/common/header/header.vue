@@ -1,48 +1,48 @@
 <template>
-    <div>
+    <div class="header">
         <ul>
-            <transition name="fade" mode="in-out">
-              <li><slot name="small_icons"><div class="anniu" @click ="change"></div></slot></li>
-            </transition>
-            <li><slot name="template">-1/9</slot>|<slot name="wheather">多云</slot></li>
+            <li @click ="change">
+                <slot class="small_icons" v-if="show">笑笑</slot >
+                <slot class="small_icons" v-else>哈哈</slot >
+            </li>
+            <li><slot name="template">-1/9 | 多云</slot></li>
         </ul>
     </div>
 </template>
 <script>
+  import {mapState} from 'vuex'
     export default {
       name: "header",
       data () {
         return {
         }
       },
-      props:['show'],
       methods:{
        change(){
-         this.show = !this.show
+         console.log(1)
+         this.$store.dispatch('changeState')
        }
+      },
+      computed:{
+        ...mapState(['show'])
       }
     }
 </script>
 
 <style scoped lang="less" type="text/less">
-    div{
+    .header{
         position: fixed;
-        padding: 0 0.2rem;
         left: 0;
         top: 0;
         height:.48rem;
-        width: 100%;
+        width:100%;
         ul{
+          margin:0 0.2rem;
           display: flex;
           justify-content: space-between;
           li{
-              font-size: .24rem;
-              color: #999;
-            .anniu{
-              background: #ddd;
-              width:.3rem;
-              height: 0.3rem;
-            }
+              font: .24rem/0.48rem '';
+              color: #000;
           }
         }
     }
