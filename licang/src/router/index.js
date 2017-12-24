@@ -12,6 +12,9 @@ import Tab from '@/components/page/common/tab' //底部切换
 import  F from '@/components/page/F/f'
 import  C from '@/components/page/C/c'
 
+
+import  Swiper from '@/components/page/swiper'
+
 Vue.use(Router)
 
 export default new Router({
@@ -68,7 +71,11 @@ export default new Router({
       name: 'concernman',
       component: Concernman
     },
-
+    {
+      path: '/swiper',
+      name: 'swiper',
+      component: Swiper
+    },
   ],
   scrollBehavior (to, from, savedPosition) {
     if (savedPosition) {

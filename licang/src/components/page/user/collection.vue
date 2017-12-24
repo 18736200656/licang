@@ -1,21 +1,18 @@
 <template>
-    <div class="collection">
-        <ul>
-            <li v-for="(item,index) in arr" :key="index">
-                <img :src="showImg" alt="" class="show_img">
-                <div class="author">
-                    <img :src="defaultImg" alt="">
-                    <div class="collUser" @click="$router.push({path:'/concernman'})">
-                        <h3>长衣服呢过</h3>
-                        <p>fskadfa </p>
-                    </div>
-                </div>
-                <div class="remove">
-                    <span>X</span>
-                </div>
-            </li>
-        </ul>
-    </div>
+  <div class="collection">
+    <swiper :options="swiperOption" ref="mySwiper" class="swiper_box">
+      <swiper-slide v-for="(item,index) in listImgL" :key="index" class="swiper_item">
+        <img :src="item.url" alt="" class="show_img">
+        <div class="author">
+          <img :src="defaultImg" alt="">
+          <div class="collUser" @click="$router.push({path:'/concernman'})">
+            <h3>长衣服呢过</h3>
+            <p>fskadfa </p>
+          </div>
+        </div>
+      </swiper-slide>
+    </swiper>
+  </div>
 </template>
 
 <script>
@@ -24,26 +21,46 @@
     name: "collection",
     data(){
       return{
-        arr:[1,2,3],
         defaultImg:imgBaseUrl,
-        showImg:'./../../../assets/logo.png'
+        listImgL: [
+          {"url": "../../../static/img/1.jpg"},
+          {"url": "../../../static/img/2.jpg"},
+          {"url": "../../../static/img/3.jpg"},
+          {"url": "../../../static/img/4.jpg"},
+          {"url": "../../../static/img/5.jpg"}
+        ],
+        swiperOption: {
+          spaceBetween: 20,
+          grabCursor : true,
+          setWrapperSize :true,
+          paginationClickable :true,
+          mousewheelControl : true,
+          observeParents:true,
+        }
       }
     },
     components:{
-
+      swiper() {
+        return this.$refs.mySwiper.swiper
+      }
+    },
+    mounted() {
+      // current swiper instance
+      // 然后你就可以使用当前上下文内的swiper对象去做你想做的事了
+      console.log('this is current swiper instance object', this.swiper)
+      this.swiper.slideTo(3, 1000, false)
     }
   }
 </script>
 
 <style scoped lang="less" type="text/less">
-  .collection{
-    width:100%;
-    border:1px solid #ddd;
-    ul{width: 300%;
+
+    .swiper_box{
+        width: 100%;
         height: 2.5rem;
         overflow-y: hidden;
         overflow-x: auto;
-        li{
+        .swiper_item{
             width: 2rem;
             height: 100%;
             float: left;
@@ -116,5 +133,5 @@
             top: 0;
         }
     }
-  }
+
 </style>

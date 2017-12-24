@@ -1,10 +1,5 @@
 <template>
-  <div>
-    <transition
-      enter-active-class="animated rotateInDownLeft"
-      leave-active-class="animated rotateOutUpLeft"
-    >
-      <div class="user_info" v-if="show">
+      <div class="user_info">
         <div class="box">
           <header>
             <img :src="defaultImg" alt="" class="userImg">
@@ -37,7 +32,12 @@
               </li>
               <li>关注</li>
               <li>收藏</li>
-              <li>客服</li>
+              <li>客服
+                <dl>
+                  <dd>021-40058886</dd>
+                </dl>
+
+              </li>
               <li>设置</li>
 
             </ul>
@@ -45,13 +45,9 @@
         </div>
 
       </div>
-    </transition>
-  </div>
-
 </template>
 
 <script>
-  import Header from '../common/header/header'
   import{imgBaseUrl} from '../../config/env'
   import {mapState} from 'vuex'
   export default {
@@ -66,7 +62,7 @@
       }
     },
     created(){
-      //this.$store.dispatch('change')
+
     },
     methods:{
       clearText(el){
@@ -79,21 +75,24 @@
     },
     components:{
     },
-    computed:{
-      ...mapState(['show'])
-    }
 
   }
 </script>
 
 <style scoped lang="less" type="text/less">
     .user_info{
-      position: absolute;
+      transform-origin:0 0;
+      -ms-transform-origin:0 0;
+      -webkit-transform-origin:0 0;
+      -moz-transform-origin:0 0;
+      -o-transform-origin:0 0;
+      position: fixed;
       left:0.2rem;
       top:0.5rem;
       right:0.35rem;
-      padding:0 .15rem;
-      z-index:999;
+      bottom:0.5rem;
+      z-index:9;
+      background:#fff;
     }
     .box{
         border: 1px solid #ddd;
@@ -160,8 +159,6 @@
 
                         }
                     }
-
-
                 }
             }
         }
