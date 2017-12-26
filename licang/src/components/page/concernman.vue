@@ -1,6 +1,5 @@
 <template>
     <div class="concernman">
-        <Header></Header>
         <transition name="fade">
             <section>
                 <div class="header">

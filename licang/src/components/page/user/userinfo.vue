@@ -1,53 +1,55 @@
 <template>
-    <div class="user_info">
-      <Header></Header>
+      <div class="user_info">
         <div class="box">
-            <header>
-                <img :src="defaultImg" alt="" class="userImg">
-                <div class="name">
-                    <h3>张一等</h3>
-                    <p>自我介绍</p>
-                </div>
-            </header>
-            <div class="info">
-                <ul class="infoDetail">
-                    <li>身份
-                        <dl v-show="ddshow">
-                            <dd>QQ
-                                <div v-show="divshow">
-                                    <input type="text" class="qq" maxlength="10" v-model="qq">
-                                    <i class="el-icon-edit" @click="clearText($event)"></i>
-                                </div>
-                            </dd>
-                            <dd>电话
-                                <div>
-                                    <input type="text" class="phone" maxlength="11" v-model="phone">
-                                    <i class="el-icon-edit" @click="clearText($event)"></i>
-                                </div>
-                            </dd>
-                            <dd>介绍</dd>
-                            <dd>经验</dd>
-                            <dd>领域</dd>
-                            <dd>区域</dd>
-                        </dl>
-                    </li>
-                    <li>关注</li>
-                    <li>收藏</li>
-                    <li>客服</li>
-                    <li>设置</li>
-
-                </ul>
+          <header>
+            <img :src="defaultImg" alt="" class="userImg">
+            <div class="name">
+              <h3>张一等</h3>
+              <p>自我介绍</p>
             </div>
+          </header>
+          <div class="info">
+            <ul class="infoDetail">
+              <li @click="ddshow=!ddshow">身份
+                <dl v-show="ddshow">
+                  <dd>QQ
+                    <div v-show="divshow">
+                      <input type="text" class="qq" maxlength="10" v-model="qq">
+                      <i class="el-icon-edit" @click="clearText($event)"></i>
+                    </div>
+                  </dd>
+                  <dd>电话
+                    <div>
+                      <input type="text" class="phone" maxlength="11" v-model="phone">
+                      <i class="el-icon-edit" @click="clearText($event)"></i>
+                    </div>
+                  </dd>
+                  <dd>介绍</dd>
+                  <dd>经验</dd>
+                  <dd>领域</dd>
+                  <dd>区域</dd>
+                </dl>
+              </li>
+              <li>关注</li>
+              <li>收藏</li>
+              <li>客服
+                <dl>
+                  <dd>021-40058886</dd>
+                </dl>
+
+              </li>
+              <li>设置</li>
+
+            </ul>
+          </div>
         </div>
 
-    </div>
+      </div>
 </template>
 
 <script>
-    import{imgBaseUrl} from '../../config/env'
-
-    let Oul = document.getElementsByClassName('infoDetail')[0];
-    let lis = document.getElementsByClassName('li');
+  import{imgBaseUrl} from '../../config/env'
+  import {mapState} from 'vuex'
   export default {
     name: "userinfo",
     data(){
@@ -56,7 +58,7 @@
         divshow:false,
         defaultImg:imgBaseUrl,
         qq:'',
-        phone:''
+        phone:'',
       }
     },
     created(){
@@ -70,15 +72,27 @@
 
       },
 
-
-    }
+    },
+    components:{
+    },
 
   }
 </script>
 
 <style scoped lang="less" type="text/less">
     .user_info{
-        padding:0 .15rem;
+      transform-origin:0 0;
+      -ms-transform-origin:0 0;
+      -webkit-transform-origin:0 0;
+      -moz-transform-origin:0 0;
+      -o-transform-origin:0 0;
+      position: fixed;
+      left:0.2rem;
+      top:0.5rem;
+      right:0.35rem;
+      bottom:0.5rem;
+      z-index:9;
+      background:#fff;
     }
     .box{
         border: 1px solid #ddd;
@@ -145,8 +159,6 @@
 
                         }
                     }
-
-
                 }
             }
         }

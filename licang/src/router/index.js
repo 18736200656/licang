@@ -4,20 +4,42 @@ import HelloWorld from '@/components/HelloWorld'
 import Index from '@/components/page/index' //首页
 import UserInfo from '@/components/page/user/userinfo' //用户信息
 import Collection from '@/components/page/user/collection' //用户收藏
-import Header from '@/components/page/common/header/header' //头部
 import ImgList from '@/components/page/imglist' //个人展览
-import Preview from '@/components/page/preview' //点击图片放大
 import Concernman from '@/components/page/concernman' //关注人物信息
+
+
+import Tab from '@/components/page/common/tab' //底部切换
+import  F from '@/components/page/F/f'
+import  C from '@/components/page/C/c'
+
+
+import  Swiper from '@/components/page/swiper'
 
 Vue.use(Router)
 
 export default new Router({
-  strict: process.env.NODE_ENV !== 'production',
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'tab',
+      component: Tab,
+      children:[
+        {
+          path: '',
+          name: 'index',
+          component: Index
+        },
+        {
+          path: 'c',
+          name: 'index',
+          component: C
+        },
+        {
+          path: 'f',
+          name: 'f',
+          component: F
+        },
+      ]
     },
     {
       path: '/index',
@@ -39,17 +61,21 @@ export default new Router({
       name: 'imglist',
       component: ImgList
     },
-    {
-      path: '/preview/:id',
-      name: 'preview',
-      component: Preview
-    },
+    // {
+    //   path: '/preview',
+    //   name: 'preview',
+    //   component: Preview
+    // },
     {
       path: '/concernman',
       name: 'concernman',
       component: Concernman
-    }
-
+    },
+    {
+      path: '/swiper',
+      name: 'swiper',
+      component: Swiper
+    },
   ],
   scrollBehavior (to, from, savedPosition) {
     if (savedPosition) {
