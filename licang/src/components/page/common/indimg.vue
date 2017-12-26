@@ -1,23 +1,28 @@
 <template>
+    <div>
     <swiper :options="swiperOption" ref="mySwiper" class="swiper_box">
-        <swiper-slide v-for="(slide,index) in listImgL" :key="index" class="swiper_item"
-                      @click="$router.push({path:'/preview',params:{}})">
-            <img :src="slide" alt="">
+        <swiper-slide v-for="(slide,index) in listImgL" :key="index" class="swiper_item">
+            <img :src="slide" alt="" @click.stop.prevent="bigImg($event)">
         </swiper-slide>
     </swiper>
+    <Preview :imgSrc="imgSrc" v-if="bigImgShow"></Preview>
+    </div>
 </template>
 
 <script>
-  // swiper options example:
+  import Preview from './preview'
+  import {mapState} from 'vuex'
   export default {
     name: 'ind-img',
     data() {
       return {
+        imgSrc:'',
         listImgL:[
           '../../../../../static/img/1.jpg',
           '../../../../../static/img/2.jpg',
           '../../../../../static/img/3.jpg',
-          '../../../../../static/img/1.png'
+          '../../../../../static/img/4.jpg',
+          '../../../../../static/img/5.jpg',
         ],
         swiperOption: {
           notNextTick: true,
@@ -39,13 +44,26 @@
     computed: {
       swiper() {
         return this.$refs.mySwiper.swiper
-      }
+      },
+      ...mapState(['bigImgShow'])
     },
     mounted() {
       // you can use current swiper instance object to do something(swiper methods)
       // 然后你就可以使用当前上下文内的swiper对象去做你想做的事了
       console.log('this is current swiper instance object', this.swiper)
       this.swiper.slideTo(0, 1000, false)
+    },
+    components:{
+      Preview
+    },
+    methods:{
+      bigImg(e){
+        setTimeout(()=>{
+          this.$store.dispatch('priewBigImg')
+        },300)
+        this.imgSrc = e.currentTarget.src;
+
+      }
     }
   }
 </script>

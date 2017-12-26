@@ -11,9 +11,10 @@ import Concernman from '@/components/page/concernman' //关注人物信息
 import Tab from '@/components/page/common/tab' //底部切换
 import  F from '@/components/page/F/f'
 import  C from '@/components/page/C/c'
+import  Works from '@/components/page/C/works'
 
 
-import  Swiper from '@/components/page/swiper'
+import  Preview from '@/components/page/common/preview'
 
 Vue.use(Router)
 
@@ -25,13 +26,13 @@ export default new Router({
       component: Tab,
       children:[
         {
-          path: '',
+          path: 'index',
           name: 'index',
           component: Index
         },
         {
           path: 'c',
-          name: 'index',
+          name: 'c',
           component: C
         },
         {
@@ -39,43 +40,42 @@ export default new Router({
           name: 'f',
           component: F
         },
+        {
+          path: 'userinfo',
+          name: 'userinfo',
+          component: UserInfo
+        },
+        {
+          path: 'imglist',
+          name: 'imglist',
+          component: ImgList
+        },
+        {
+          path: 'concernman',
+          name: 'concernman',
+          component: Concernman
+        },
       ]
-    },
-    {
-      path: '/index',
-      name: 'index',
-      component: Index
     },
     {
       path: '/collection',
       name: 'collection',
       component: Collection
     },
+
+
     {
-      path: '/userinfo',
-      name: 'userinfo',
-      component: UserInfo
+      path: '/preview',
+      name: 'preview',
+      component: Preview
     },
     {
-      path: '/imglist',
-      name: 'imglist',
-      component: ImgList
+      path: '/works',
+      name: 'works',
+      component: Works
     },
-    // {
-    //   path: '/preview',
-    //   name: 'preview',
-    //   component: Preview
-    // },
-    {
-      path: '/concernman',
-      name: 'concernman',
-      component: Concernman
-    },
-    {
-      path: '/swiper',
-      name: 'swiper',
-      component: Swiper
-    },
+
+
   ],
   scrollBehavior (to, from, savedPosition) {
     if (savedPosition) {

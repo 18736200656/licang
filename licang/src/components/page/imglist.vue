@@ -8,21 +8,17 @@
                 <span @click="hide">X</span>
                 <div class="imgs">
                     <div v-for="item in items" class="img_self">
-                      <img :src="item.img" alt=""  @click.stop="bigImg($event)">
+                      <img :src="item.url" alt=""  @click.stop="bigImg($event)">
                     </div>
                 </div>
             </div>
         </transition>
-      <transition
-        enter-active-class="animated bounceIn"
-        leave-active-class="animated bounceOut"
-      >
        <preview :imgSrc="imgSrc" v-if="bigImgShow"></preview>
-      </transition>
     </div>
 </template>
 
 <script>
+  import Preview from './common/preview'
   import {imgBaseUrl} from "./../config/env";
   import {mapState} from 'vuex'
   export default {
@@ -31,17 +27,25 @@
       return{
         showImg:true,
         imgSrc:imgBaseUrl,
-        items:[{"img":"1.jpg"},
-          {"img":"2.jpg"},
-          {"img":"3.jpg"}],
+        items:[
+          {'url':'../../../static/img/1.jpg'},
+          {'url':'../../../static/img/2.jpg'},
+          {'url':'../../../static/img/3.jpg'},
+          {'url':'../../../static/img/4.jpg'},
+          {'url':'../../../static/img/5.jpg'}],
       }
     },
     components:{
-
+      Preview
     },
     methods:{
       hide(){
+        setTimeout(()=>{
+          this.$router.push('/index')
+        },500)
+
         this.showImg =false
+
       },
       bigImg(e){
         this.$store.dispatch('priewBigImg');
@@ -58,7 +62,7 @@
 
 <style scoped lang="less" type="text/less">
     .imglist{
-        margin: 0 .2rem;
+        margin: 0.5rem .2rem;
         .box{
             padding: 0 .1rem ;
             background:rgba(0,0,0,0.6);

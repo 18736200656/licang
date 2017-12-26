@@ -8,7 +8,8 @@ import actions from './action'
 Vue.use(Vuex)
 
 const state ={
-    show:false
+    show:false,
+    bigImgShow:false
 }
 export default new Vuex.Store({
   state,

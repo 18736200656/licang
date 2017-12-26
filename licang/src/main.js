@@ -3,30 +3,30 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-//import Fastclick from 'fastclick'
-import animate from 'animate.css' //引入动画
-import store from './store'
 
 import './assets/js/jquery-1.4.2.min'
 import './assets/js/rem.js'
 
 
+import store from './store'
 
 
 /*共用组件*/
 import Preview from './components/page/common/preview' //点击图片放大
-Vue.component('preview',Preview) //使用组件
+Vue.component(Preview.name,Preview) //使用组件
 
-import 'element-ui/lib/theme-chalk/index.css'
+
 import './assets/css/reset.css'
+import animate from 'animate.css' //引入动画
 
-// import './assets/js/swiper-3.4.2.min'
-// import './assets/css/swiper.min.css'
-
-
+/*引入第三方插件*/
 import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
+
+//import Fastclick from 'fastclick'
 //Vue.use(Fastclick)
+
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
 Vue.use(VueAwesomeSwiper, /* { default global options } */)

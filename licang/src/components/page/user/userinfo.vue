@@ -30,8 +30,12 @@
                   <dd>区域</dd>
                 </dl>
               </li>
-              <li>关注</li>
-              <li>收藏</li>
+              <li>关注
+                <Concern></Concern>
+              </li>
+              <li>收藏
+                <Collection></Collection>
+              </li>
               <li>客服
                 <dl>
                   <dd>021-40058886</dd>
@@ -48,6 +52,8 @@
 </template>
 
 <script>
+  import Concern from './../common/concern'
+  import Collection from './../user/collection'
   import{imgBaseUrl} from '../../config/env'
   import {mapState} from 'vuex'
   export default {
@@ -74,6 +80,8 @@
 
     },
     components:{
+      Concern,
+      Collection
     },
 
   }

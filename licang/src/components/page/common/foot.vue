@@ -22,6 +22,7 @@
         height: 0.6rem;
         background: rgba(32,39,43,1);
         width: 100%;
+        z-index: 1000;
         ul{
             height: 100%;
             li{

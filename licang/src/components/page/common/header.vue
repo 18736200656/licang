@@ -2,8 +2,8 @@
     <div class="header">
         <ul>
             <li @click="changeState">
-                <slot name="big_icons" v-if="imgshow"><img src="../../../assets/list.png" alt="" class="big"></slot>
-                <slot name="small_icons" v-else><img src="../../../assets/list.png" alt="" class="small"></slot>
+                <slot name="big_icons" v-if="imgshow"><img src="../../../assets/list.png" alt="" class="small"></slot>
+                <slot name="small_icons" v-else><img src="../../../assets/list.png" alt="" class="big"></slot>
             </li>
             <li><slot name="template">-1/9 | 多云</slot></li>
         </ul>
@@ -41,6 +41,8 @@
         left: 0;
         top: 0;
         width: 100%;
+        z-index: 1000;
+        background: #fff;
         ul{
             width: 100%;
             padding: 0 .2rem;

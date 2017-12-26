@@ -1,18 +1,16 @@
 <template>
-  <div class="collection">
     <swiper :options="swiperOption" ref="mySwiper" class="swiper_box">
-      <swiper-slide v-for="(item,index) in listImgL" :key="index" class="swiper_item">
+      <swiper-slide v-for="(item,index) in listImgL" :key="index" class="swiper_item" @click.native="$router.push({path:'/imglist'})">
         <img :src="item.url" alt="" class="show_img">
-        <div class="author">
-          <img :src="defaultImg" alt="">
-          <div class="collUser" @click="$router.push({path:'/concernman'})">
-            <h3>长衣服呢过</h3>
-            <p>fskadfa </p>
-          </div>
-        </div>
+        <dl class="author">
+            <dt> <img :src="defaultImg" alt=""></dt>
+            <dd class="collUser" @click.stop="$router.push({path:'/concernman'})">
+                <h3>长衣服</h3>
+                <p>fskadfa </p>
+            </dd>
+        </dl>
       </swiper-slide>
     </swiper>
-  </div>
 </template>
 
 <script>
@@ -30,16 +28,21 @@
           {"url": "../../../static/img/5.jpg"}
         ],
         swiperOption: {
-          spaceBetween: 20,
-          grabCursor : true,
+          notNextTick: true,
+          slidesPerView: 'auto',
+          //grabCursor : true,
           setWrapperSize :true,
-          paginationClickable :true,
-          mousewheelControl : true,
-          observeParents:true,
+          //centeredSlides: true,
+          spaceBetween: 15,
+          onSlideChangeEnd: swiper => {
+            //这个位置放swiper的回调方法
+            this.page = swiper.realIndex+1;
+            this.index = swiper.realIndex;
+          }
         }
       }
     },
-    components:{
+    computed:{
       swiper() {
         return this.$refs.mySwiper.swiper
       }
@@ -48,7 +51,7 @@
       // current swiper instance
       // 然后你就可以使用当前上下文内的swiper对象去做你想做的事了
       console.log('this is current swiper instance object', this.swiper)
-      this.swiper.slideTo(3, 1000, false)
+      this.swiper.slideTo(0, 1000, false)
     }
   }
 </script>
@@ -56,32 +59,30 @@
 <style scoped lang="less" type="text/less">
 
     .swiper_box{
-        width: 100%;
-        height: 2.5rem;
-        overflow-y: hidden;
-        overflow-x: auto;
+        margin: 0.2rem 0;
+        height: 2.68rem;
         .swiper_item{
-            width: 2rem;
-            height: 100%;
-            float: left;
-            margin-right: 0.2rem;
+            width: 1.68rem;
+            height: 2.68rem;
+            margin-right: 0.15rem;
             border: 1px solid #999;
             position: relative;
             .show_img{
                 display: block;
                 height: 100%;
                 width: 100%;
+                transition: all 0.5s;
             }
             .author{
                 width: 100%;
-                height: 1rem;
+                height: 0.69rem;
                 background: #fff;
-                padding: 0.2rem 0 0.2rem 0.2rem;
-                border: 1px solid #ddd;
-                box-shadow: 0 2px 4px #ddd;
+                padding: 0.1rem;
+                box-sizing: border-box;
+                border-top: 1px solid #ddd;
                 position: absolute;
                 left: 0;
-                bottom: -1rem;
+                bottom: -0.7rem;
                 transition: all 0.5s;
                 img{
                     width: 0.5rem;
@@ -91,7 +92,7 @@
 
                 }
                 .collUser{
-                    margin-left: 0.1rem;
+                    margin-left: 0.15rem;
                     float: left;
                     height: .5rem;
                     text-align: left;
@@ -131,6 +132,9 @@
         }
         &:hover .remove{
             top: 0;
+        }
+        &:hover .show_img{
+            height:2rem;
         }
     }
 
