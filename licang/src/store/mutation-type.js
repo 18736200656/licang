@@ -1,0 +1,1 @@
+export const SHOW = 'SHOW';  //状态显示
