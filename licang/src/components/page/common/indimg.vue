@@ -50,7 +50,7 @@
     mounted() {
       // you can use current swiper instance object to do something(swiper methods)
       // 然后你就可以使用当前上下文内的swiper对象去做你想做的事了
-      console.log('this is current swiper instance object', this.swiper)
+      //console.log('this is current swiper instance object', this.swiper)
       this.swiper.slideTo(0, 1000, false)
     },
     components:{

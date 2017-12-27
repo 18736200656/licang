@@ -1,7 +1,7 @@
 <template>
     <div class="f">
         <div class="like_box" v-for="(item,index) in listImg">
-            <div class="img">
+            <div class="img" @click="imgDetail">
                 <img :src="item" alt="">
             </div>
             <div class="cont">
@@ -42,6 +42,9 @@
     methods:{
       likeFun(e){
         this.likeShow = !this.likeShow
+      },
+      imgDetail(){
+        this.$router.push('/imgdetail')
       }
     }
   }

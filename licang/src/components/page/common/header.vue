@@ -5,6 +5,7 @@
                 <slot name="big_icons" v-if="imgshow"><img src="../../../assets/list.png" alt="" class="small"></slot>
                 <slot name="small_icons" v-else><img src="../../../assets/list.png" alt="" class="big"></slot>
             </li>
+            <li><slot name="cityName"></slot></li>
             <li><slot name="template">-1/9 | 多云</slot></li>
         </ul>
     </div>
@@ -19,6 +20,9 @@
           imgshow:true
         }
       },
+      created(){
+        this.weather()
+      },
       methods:{
         changeState(){
           this.imgshow = !this.imgshow
@@ -26,7 +30,25 @@
           // if(this.$store.state.show){
           //   this.$router.replace('userinfo')
           // }
-        }
+        },
+        weather(){
+          let url = 'http://restapi.amap.com/v3/weather/weatherInfo';
+          let options={
+            key:'724957b94d7f9267ccac368f18c47010',
+            city:'上海',
+            extensions:'base',
+            output:JSON
+          }
+          this.$http.get(url,options)
+            .then(res=>{
+                console.log(res.data)
+            })
+            .catch(err=>{
+              console.log(err)
+            })
+        },
+
+
       },
       computed:{
         ...mapState(['show'])

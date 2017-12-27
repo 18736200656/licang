@@ -10,7 +10,13 @@
 
 <script>
   export default {
-    name: "foot"
+    name: "foot",
+    data(){
+      return{
+
+      }
+    },
+
   }
 </script>
 
@@ -30,8 +36,11 @@
                 float: left;
                 width: 33.3%;
                 text-align: center;
-                color: #fff;
+                color: #90FFFF;
                 font:0.24rem/0.6rem '';
+            }
+            .router-link-active{
+                color: #fff;
             }
         }
     }

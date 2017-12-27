@@ -9,12 +9,19 @@ import Concernman from '@/components/page/concernman' //关注人物信息
 
 
 import Tab from '@/components/page/common/tab' //底部切换
+
 import  F from '@/components/page/F/f'
+import  Imgdetail from '@/components/page/F/imgdetail'
+
+
+
 import  C from '@/components/page/C/c'
 import  Works from '@/components/page/C/works'
+import  Content from '@/components/page/C/content'
 
 
 import  Preview from '@/components/page/common/preview'
+import  Header from '@/components/page/common/header' //头部
 
 Vue.use(Router)
 
@@ -74,7 +81,21 @@ export default new Router({
       name: 'works',
       component: Works
     },
-
+    {
+      path: '/content',
+      name: 'content',
+      component: Content
+    },
+    {
+      path: '/imgdetail',
+      name: 'imgdetail',
+      component: Imgdetail
+    },
+    {
+      path: '/header',
+      name: 'header',
+      component: Header
+    },
 
   ],
   scrollBehavior (to, from, savedPosition) {

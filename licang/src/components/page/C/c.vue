@@ -8,9 +8,9 @@
                       <h3>Owen Zhao</h3>
                       <p>Designer</p>
                   </div>
-                  <div class="concern" @click="concernButton">
-                      <span v-if="concernShow" class="active">关注</span>
-                      <span v-else >关注</span>
+                  <div class="concern" @click="concernButton(index)">
+                      <span :class="{active:isActive==index}" v-if="concernShow">关注</span>
+                      <span v-else>关注</span>
                   </div>
               </div>
               <ul class="star">
@@ -35,6 +35,7 @@
     name: "c",
     data(){
       return{
+        isActive:-1,
         concernShow:false,
         listImgL:[1,2,3,4],
         swiperOption: {
@@ -64,8 +65,9 @@
       Clunbo
     },
     methods:{
-      concernButton(){
-        this.concernShow =!this.concernShow
+      concernButton(index){
+        this.concernShow = !this.concernShow
+        this.isActive =index
       }
     }
   }
