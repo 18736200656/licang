@@ -10,18 +10,19 @@
           </header>
           <div class="info">
             <ul class="infoDetail">
-              <li @click="ddshow=!ddshow">身份
+              <li @click.stop="ddshow=!ddshow">身份
                 <dl v-show="ddshow">
-                  <dd>QQ
+                  <dd @click.stop="divshow=!divshow">QQ
                     <div v-show="divshow">
                       <input type="text" class="qq" maxlength="10" v-model="qq">
-                      <i class="el-icon-edit" @click="clearText($event)"></i>
+                      <i class="el-icon-edit" @click.stop="clearText($event)"></i>
                     </div>
                   </dd>
                   <dd>电话
-                    <div>
+
+                    <div v-show="divshow">
                       <input type="text" class="phone" maxlength="11" v-model="phone">
-                      <i class="el-icon-edit" @click="clearText($event)"></i>
+                      <i class="el-icon-edit" @click.stop="clearText($event)"></i>
                     </div>
                   </dd>
                   <dd>介绍</dd>
@@ -30,20 +31,22 @@
                   <dd>区域</dd>
                 </dl>
               </li>
-              <li>关注
-                <Concern></Concern>
+              <li @click="concerShow = !concerShow">关注
+                <Concern v-show="concerShow"></Concern>
               </li>
-              <li>收藏
-                <Collection></Collection>
+              <li @click="colecShow = !colecShow">收藏
+                <Collection v-show="colecShow"></Collection>
               </li>
-              <li>客服
-                <dl>
-                  <dd>021-40058886</dd>
+              <li @click="custom =!custom">客服
+                <dl v-show="custom">
+                  <dd >021-40058886</dd>
                 </dl>
-
               </li>
-              <li>设置</li>
-
+              <li @click="set = !set">设置
+                <dl v-show="set">
+                    <dd>设置111</dd>
+                </dl>
+              </li>
             </ul>
           </div>
         </div>
@@ -62,20 +65,27 @@
       return{
         ddshow:true,
         divshow:false,
+        concerShow:false,
+        colecShow:false,
+        custom:false,
+        set:false,
+        divShow:false,
         defaultImg:imgBaseUrl,
         qq:'',
         phone:'',
       }
     },
     created(){
-
+        this.clearText();  //清楚输入框的内容
     },
     methods:{
       clearText(el){
+        if(!el){
+          return false
+        }
         console.log(el.target)
         console.log(el.target.parentNode.firstChild)
         el.target.parentNode.firstChild.value = '';
-
       },
 
     },
@@ -83,6 +93,14 @@
       Concern,
       Collection
     },
+    mounted(){
+      let dds = document.getElementsByTagName('dd');
+      for(var i=0;i<dds.length;i++){
+        dds[i].onclick=function () {
+          this.divshow =!this.divshow
+        }
+      }
+    }
 
   }
 </script>
@@ -96,11 +114,12 @@
       -o-transform-origin:0 0;
       position: fixed;
       left:0.2rem;
-      top:0.5rem;
+      top:0.48rem;
       right:0.35rem;
-      bottom:0.5rem;
-      z-index:9;
+      bottom:0.8rem;
+      z-index:1;
       background:#fff;
+      overflow: auto;
     }
     .box{
         border: 1px solid #ddd;
@@ -133,7 +152,7 @@
             ul{
                 padding: .2rem 0;
                 li{
-                    margin-left: 0.5rem;
+                    margin-left: 0.2rem;
                     padding-right: 0.3rem;
                     text-align: left;
                     font-weight: bold;

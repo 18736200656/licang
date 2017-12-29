@@ -3,7 +3,7 @@
       <swiper-slide v-for="(item,index) in listImgL" :key="index" class="swiper_item" @click.native="$router.push({path:'/imglist'})">
         <img :src="item.url" alt="" class="show_img">
         <dl class="author">
-            <dt> <img :src="defaultImg" alt=""></dt>
+            <dt> <img :src="defaultImg" alt="" class="author_img"></dt>
             <dd class="collUser" @click.stop="$router.push({path:'/concernman'})">
                 <h3>长衣服</h3>
                 <p>fskadfa </p>
@@ -84,12 +84,12 @@
                 left: 0;
                 bottom: -0.7rem;
                 transition: all 0.5s;
-                img{
+                .author_img{
+                    display: block;
                     width: 0.5rem;
                     height: 0.5em;
                     border-radius: 50%;
                     float: left;
-
                 }
                 .collUser{
                     margin-left: 0.15rem;

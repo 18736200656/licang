@@ -1,15 +1,17 @@
 <template>
     <div>
-    <swiper :options="swiperOption" ref="mySwiper" class="swiper_box">
-        <swiper-slide v-for="(slide,index) in listImgL" :key="index" class="swiper_item">
-            <img :src="slide" alt="" @click.stop.prevent="bigImg($event)">
-        </swiper-slide>
-    </swiper>
-    <Preview :imgSrc="imgSrc" v-if="bigImgShow"></Preview>
+        <swiper :options="swiperOption" ref="mySwiper" class="swiper_box">
+            <swiper-slide v-for="(slide,index) in listImgL" :key="index" class="swiper_item">
+                <img :src="slide" alt="" @click="bigImg($event)">
+            </swiper-slide>
+        </swiper>
+        <Preview :imgSrc="imgSrc" v-show="bigImgShow"></Preview>
     </div>
 </template>
 
 <script>
+
+
   import Preview from './preview'
   import {mapState} from 'vuex'
   export default {
@@ -27,9 +29,7 @@
         swiperOption: {
           notNextTick: true,
           slidesPerView: 'auto',
-          //grabCursor : true,
           setWrapperSize :true,
-          //centeredSlides: true,
           spaceBetween: 15,
           onSlideChangeEnd: swiper => {
             //这个位置放swiper的回调方法
@@ -52,15 +52,17 @@
       // 然后你就可以使用当前上下文内的swiper对象去做你想做的事了
       //console.log('this is current swiper instance object', this.swiper)
       this.swiper.slideTo(0, 1000, false)
+      this.$emit('big',this.imgSrc);
     },
     components:{
       Preview
     },
     methods:{
       bigImg(e){
-        setTimeout(()=>{
-          this.$store.dispatch('priewBigImg')
-        },300)
+        console.log(this.imgSrc)
+        console.log(e.currentTarget.src)
+        this.$store.dispatch('priewBigImg')
+
         this.imgSrc = e.currentTarget.src;
 
       }

@@ -9,11 +9,13 @@
       <transition name="bounce">
         <UserInfo v-show="show"></UserInfo>
       </transition>
-      <preview :imgSrc="imgSrc" v-show="bigImgShow"></preview>
+
     </div>
 </template>
 
 <script>
+
+
     import Indimg from './common/indimg'
     import UserInfo from './user/userinfo'
     import {mapState} from 'vuex'
@@ -54,22 +56,21 @@
 
       },
       methods:{
-        bigImg(e){
-          this.$store.dispatch('priewBigImg')
-          this.imgSrc = e.currentTarget.src
-        }
+
       },
       computed:{
         ...mapState(['show','bigImgShow']),
         swiper() {
           return this.$refs.mySwiper.swiper
-          consolelog(this.$refs.mySwiper)
         }
 
       },
       mounted () {
         //这边就可以使用swiper这个对象去使用swiper官网中的那些方法
         //this.swiper.slideTo(3, 1000, false);
+        this.$on('big',function (src) {
+          this.imgSrc = src
+        });
 
       }
     }

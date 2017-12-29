@@ -21,7 +21,7 @@
         }
       },
       created(){
-        this.weather()
+        //this.weather()
       },
       methods:{
         changeState(){
@@ -31,22 +31,22 @@
           //   this.$router.replace('userinfo')
           // }
         },
-        weather(){
-          let url = 'http://restapi.amap.com/v3/weather/weatherInfo';
-          let options={
-            key:'724957b94d7f9267ccac368f18c47010',
-            city:'上海',
-            extensions:'base',
-            output:JSON
-          }
-          this.$http.get(url,options)
-            .then(res=>{
-                console.log(res.data)
-            })
-            .catch(err=>{
-              console.log(err)
-            })
-        },
+        // weather(){
+        //   let url = 'http://restapi.amap.com/v3/weather/weatherInfo';
+        //   let options={
+        //     key:'724957b94d7f9267ccac368f18c47010',
+        //     city:'上海',
+        //     extensions:'base',
+        //     output:JSON
+        //   }
+        //   this.$http.get(url,options)
+        //     .then(res=>{
+        //         console.log(res.data)
+        //     })
+        //     .catch(err=>{
+        //       console.log(err)
+        //     })
+        // },
 
 
       },

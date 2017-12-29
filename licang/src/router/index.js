@@ -23,6 +23,9 @@ import  Content from '@/components/page/C/content'
 import  Preview from '@/components/page/common/preview'
 import  Header from '@/components/page/common/header' //头部
 
+import  Ztree from '@/components/page/common/ztree' //下拉菜单
+import  Listmenu from '@/components/page/common/listmenu' //下拉菜单
+
 Vue.use(Router)
 
 export default new Router({
@@ -95,6 +98,16 @@ export default new Router({
       path: '/header',
       name: 'header',
       component: Header
+    },
+    {
+      path: '/ztree',
+      name: 'ztree',
+      component: Ztree
+    },
+    {
+      path: '/listmenu',
+      name: 'listmenu',
+      component: Listmenu
     },
 
   ],
